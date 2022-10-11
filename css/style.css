@@ -1,0 +1,166 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+
+* {
+  font-family: Avenir, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.main {
+  margin-left: 260px;
+}
+
+/* sidebar */
+
+.sidebar {
+  width: 260px;
+  background: #1d1b2a;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 99;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li + li {
+  margin-top: 10px;
+}
+
+.sidebar ul a {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar ul a:hover {
+  background: #5e2f79;
+}
+
+/* navigation */
+
+.navbar {
+  background: #1d1b2a;
+}
+
+.nav-link,
+.nav-link:hover {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 19px;
+}
+
+/* top bar */
+
+.top-bar span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.top-bar h3 {
+  color: #232323;
+  font-weight: 600;
+}
+
+.top-bar .btn {
+  background: #532a6e;
+  color: #ffffff;
+  padding: 11px 17px;
+}
+
+/* search div */
+
+.search-div input {
+  border: 1px solid #cbd6e2;
+  border-radius: 3px;
+  padding: 15px;
+  width: 230px;
+  color: #8b8c9f;
+  font-weight: 500;
+}
+
+.search-div .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-15px, -50%);
+}
+
+.search-div .dropdown .btn {
+  border: 1px solid #cbd6e2;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+/* table */
+
+.table-container table {
+  border: 1px solid #cbd6e2;
+}
+
+.table-container table thead tr {
+  background: #f4f4f9;
+}
+
+.table-container table .dropdown-menu {
+  left: -100px !important;
+}
+
+.table-container table td {
+  font-weight: 600;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.table-container .course-title-img {
+  width: 60px;
+}
+
+.table-container .course-name {
+  color: #532a6e;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.table-container .updated-date {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.table-container .dropdown-toggle::after {
+  content: initial;
+}
+
+/* pagination */
+
+.pagination-container .page-item {
+  margin-left: 5px;
+}
+
+.pagination-container .page-item.active .page-link {
+  background: #5e2f79;
+  border: 0;
+}
+
+.page-link {
+  border: 0;
+  color: #232323;
+  box-shadow: none;
+  font-size: 12px;
+}
+
+.page-link img {
+  width: 10px;
+}
